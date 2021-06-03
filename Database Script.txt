@@ -1,0 +1,34 @@
+
+
+--create db script
+CREATE DATABASE [ProductDB];
+--create db script
+
+
+--create table script
+USE [ProductDB]
+GO
+
+/****** Object:  Table [dbo].[Item]    Script Date: 6/3/2021 4:44:01 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Item](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[Name] [nvarchar](50) NOT NULL,
+	[Description] [nvarchar](50) NOT NULL,
+	[Price] [nvarchar](50) NOT NULL,
+	[Discount] [int] NULL,
+	[OnSale] [bit] NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+--create table script
+
+
